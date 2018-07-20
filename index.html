@@ -9,18 +9,32 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Shopping List</h1>
-        <form id="js-shopping-list-form">
-            <label for="shopping-list-entry">Add an item</label>
-            <input type="text" name="shopping-list-entry" class="js-shopping-list-entry" placeholder="e.g., broccoli">
-            <button type="submit">Add item</button>
-        </form>
-        <ul class="shopping-list js-shopping-list">
-        </ul>
+  <div class="container">
+    <h1>Shopping List</h1>
+    <div class="js-shopping-list-options">
+      <form id="js-shopping-list-form">
+        <label for="shopping-list-entry">Add an item</label>
+        <input type="text" name="shopping-list-entry" class="js-shopping-list-entry" placeholder="e.g., broccoli">
+        <button type="submit">Add item</button>
+      </form>
+       
+        <form id="js-shopping-list-search">
+        <label for="shopping-list-entry">Search Shopping List</label>
+        <input type="text" name="shopping-search-entry" class="js-shopping-search-entry" placeholder="e.g., carrots">
+        <button type="submit">Search</button>
+      </form>
+      <div class="checkBox">
+        <input type="checkBox" name="checkBox-check" id="checkBox-hide">
+        <label for="checkBox-check">Hide Completed Items</label>
+      </div>
     </div>
+    <ul class="shopping-list js-shopping-list">
+    </ul>
+  </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 crossorigin="anonymous"></script>
     <script type="text/javascript" src="index.js"></script>
+
 </body>
+
 </html>

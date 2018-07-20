@@ -1,51 +1,81 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  button, input[type="text"] {
-    padding: 5px;
-  }
-  
-  button:hover {
-    cursor: pointer;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  #shopping-list-item {
-    width: 250px;
-  }
-  
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .shopping-list {
-    list-style: none;
-    padding-left: 0;
-  }
-  
-  .shopping-list > li {
-    margin-bottom: 20px;
-    border: 1px solid grey;
-    padding: 20px;
-  }
-  
-  .shopping-item {
-    display: block;
-    color: grey;
-    font-style: italic;
-    font-size: 20px;
-    margin-bottom: 15px;
-  }
-  
-  .shopping-item__checked {
-    text-decoration: line-through;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button, input[type="text"] {
+  padding: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#shopping-list-item {
+  width: 250px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.shopping-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.shopping-list > li {
+  margin-bottom: 20px;
+  border: 1px solid grey;
+  padding: 20px;
+}
+
+.shopping-item {
+  display: block;
+  color: grey;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.shopping-item__checked {
+  text-decoration: line-through;
+}
+
+form{
+  margin-bottom: 10px;
+}
+
+.checkBox {
+  border: 2px solid grey;
+  padding: 5px;
+  display: inline-block
+}
+
+
+.edit {
+  float: right;
+  display: block;
+  color: grey;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+
+.edit-item-input{
+  margin-top:8px;
+	font-size:18px;
+	color:#545454;
+	border-radius: 2px;
+	display:none;
+	width:280px;
+}
